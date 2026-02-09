@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion, AnimatePresence, Variants } from 'framer-motion';
 import { useTranslations } from 'next-intl';
 
 
@@ -27,7 +27,7 @@ const containerVariants = {
   }
 };
 
-const letterVariants = {
+const letterVariants: Variants = {
   initial: {
     y: 40,
     opacity: 0,
