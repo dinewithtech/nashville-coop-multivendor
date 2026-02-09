@@ -1,0 +1,61 @@
+'use client'
+
+// libraries
+import React from "react";
+
+//Componets
+import Start from "../../screen-components/un-protected/Home/Start";
+import Cities from "../../screen-components/un-protected/Home/Cities";
+import Info from "../../screen-components/un-protected/Home/Info";
+import EnategaInfo from "../../screen-components/un-protected/Home/LifeWithEnatega";
+import GrowBussiness from "../../screen-components/un-protected/Home/GrowBussiness";
+import MiniCards from "../../screen-components/un-protected/Home/MiniCards";
+import TinyTiles from "../../useable-components/tinyTiles";
+import Couriers from "../../screen-components/un-protected/Home/ForCouriers";
+import { PaddingContainer } from "../../useable-components/containers";
+import { useTranslations } from "next-intl";
+import heavyLiftingImage from "@/public/assets/images/png/we-do-heavy-lifting.png";
+import becomeStoreOwnerImage from "@/public/assets/images/png/become-store.png";
+
+
+const Main = () => {
+  const t = useTranslations("MiniCardsHomeScreen");
+  return (
+    <div className="w-screen dark:bg-gray-900">
+      <Start />
+      <PaddingContainer>
+        <div className="w-full">
+          <Cities />
+          <Info />
+          <EnategaInfo />
+          <GrowBussiness />
+          <MiniCards />
+          <div className="grid grid-cols-1 md:grid-cols-2 my-[40px] gap-8">
+            <TinyTiles
+              image={
+                heavyLiftingImage.src
+              }
+              heading={t('title5')}
+              buttonText={t('subText5')}
+              backColor={"bg-[#eaf7fc]"}
+              link={"/restaurantInfo"}
+            />
+            <TinyTiles
+              image={
+                becomeStoreOwnerImage.src
+              }
+              heading={t('title6')}
+              buttonText={t('subText6')}
+              backColor={"bg-[#eaf7fc]"}
+              link={"/restaurantInfo"}
+            />
+          </div>
+
+          <Couriers />
+        </div>
+      </PaddingContainer>
+    </div>
+  );
+};
+
+export default Main;

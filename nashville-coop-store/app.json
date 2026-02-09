@@ -1,0 +1,76 @@
+{
+  "expo": {
+    "name": "Wayloz Store",
+    "slug": "wayloz-store",
+    "description": "Wayloz is a starter kit food ordering app built in React Native using Expo for IOS and Android. It's made keeping good aesthetics in mind as well keeping the best coding practices in mind. Its fully customisable to easily help you in your next food delivery project. https://market.nativebase.io/view/react-native-food-delivery-backend-app",
+    "version": "1.0.1",
+    "orientation": "portrait",
+    "icon": "./lib/assets/images/icon.png",
+    "assetBundlePatterns": ["**/*"],
+    "scheme": "wayloz-store",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./lib/assets/images/black.png",
+      "resizeMode": "cover",
+      "backgroundColor": "#000000"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "@sentry/react-native/expo",
+        {
+          "organization": "wayloz",
+          "project": "wayloz-rider",
+          "url": "https://sentry.io/"
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "The app accesses your photos for license, vehicle plate and profile image. Please allow these to continue using the app."
+        }
+      ],
+      "expo-asset"
+      
+    ],
+    "platforms": ["ios", "android"],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.wayloz.store",
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "$(PRODUCT_NAME) uses your location for features like finding orders nearby and tracking customer orders!",
+        "UIBackgroundModes": ["remote-notification"],
+        "ITSAppUsesNonExemptEncryption": false,
+        "UIRequiresFullScreen": true,
+        "NSBluetoothAlwaysUsageDescription": "We use Bluetooth to connect to your thermal printer.",
+        "NSBluetoothPeripheralUsageDescription": "We use Bluetooth to connect to your thermal printer."
+      }
+    },
+    "android": {
+      "versionCode": 1,
+      "googleServicesFile": "./google-services.json",
+      "permissions": [
+        "BLUETOOTH",
+        "BLUETOOTH_ADMIN",
+        "BLUETOOTH_CONNECT",
+        "BLUETOOTH_SCAN",
+        "ACCESS_COARSE_LOCATION",
+        "ACCESS_FINE_LOCATION"
+      ],
+      "package": "com.wayloz.store",
+      "adaptiveIcon": {
+        "foregroundImage": "./lib/assets/images/appIcon.png",
+        "backgroundColor": "#ffffff"
+      }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "efa6a46a-ebad-464f-88d3-9ec5f418dc4a"
+      }
+    },
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}
