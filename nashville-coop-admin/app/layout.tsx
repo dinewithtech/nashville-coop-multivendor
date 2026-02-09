@@ -4,7 +4,7 @@ import Script from 'next/script';
 
 // ✅ Add metadata export for favicon
 export const metadata = {
-  title: 'Wayloz Admin Dashboard',
+  title: 'Nashville Coop Admin Dashboard',
   icons: {
     icon: '/wayloz-favicon.png',
     // You can add more like:

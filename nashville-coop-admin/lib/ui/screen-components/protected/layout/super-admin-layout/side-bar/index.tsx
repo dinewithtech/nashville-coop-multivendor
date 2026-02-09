@@ -63,7 +63,7 @@ export default function MakeSidebar() {
     {
       text: 'My Website',
       label: t('My Website'),
-      route: 'https://web-wayloz.netlify.app/',
+      route: 'https://nashville-coop-web.netlify.app/',
       isParent: true,
       icon: faUpRightFromSquare,
       isClickable: true,

@@ -4,7 +4,8 @@
 @import 'primereact/resources/primereact.min.css' layer(primereact);
 @import 'primeicons/primeicons.css' layer(primereact);
 @import 'primereact/resources/themes/lara-light-blue/theme.css'
-  layer(primereact);
+layer(primereact);
+
 @layer tailwind-base {
   @tailwind base;
 }
@@ -15,8 +16,8 @@
 }
 
 :root {
-  --primary-color: #B83330;
-  --secondary-color: #E0A896;
+  --primary-color: #f50000;
+  --secondary-color: #FFE5E5;
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 255, 255, 255;
   --background-end-rgb: 255, 255, 255;
@@ -40,12 +41,9 @@ body,
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
+  background: linear-gradient(to bottom,
       transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+      rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
 }
 
 /* Screen Container */
@@ -56,6 +54,7 @@ body {
   height: 90dvh;
   overflow-y: auto;
 }
+
 /* End Generation Here */
 
 /* Layout */
@@ -96,6 +95,7 @@ body {
   font-weight: 700;
   line-height: 40px;
 }
+
 .heading-2 {
   font-size: 22px;
   font-weight: 700;
@@ -164,16 +164,18 @@ body {
 /* Scroll Bar  */
 ::-webkit-scrollbar {
   width: 7px;
-  height: 7px; /* Added height for horizontal scrollbars */
-  background: rgba(
-    255,
-    255,
-    255,
-    0.8
-  ); /* Light gray background for better visibility */
+  height: 7px;
+  /* Added height for horizontal scrollbars */
+  background: rgba(255,
+      255,
+      255,
+      0.8);
+  /* Light gray background for better visibility */
 }
+
 ::-webkit-scrollbar-thumb {
-  background: #d3d3d3; /* A more lighter gray color for the scrollbar thumb */
+  background: #d3d3d3;
+  /* A more lighter gray color for the scrollbar thumb */
   border-radius: 7px;
 }
 
@@ -184,12 +186,13 @@ body {
   justify-content: space-between;
   width: 100%;
 }
+
 .p-inputotp-input {
   width: 70px;
   height: 70px;
 }
 
-.p-inputotp > .p-inputtext {
+.p-inputotp>.p-inputtext {
   height: 70px;
   width: 80px;
   border-radius: 0;
@@ -203,13 +206,15 @@ body {
 
 .p-multiselect-token {
   background-color: var(--primary-color);
-  color: white; /* optional: change the text color to white for better contrast */
+  color: white;
+  /* optional: change the text color to white for better contrast */
 }
 
 .p-multiselect-filter-container {
   display: flex;
   align-items: center;
 }
+
 .p-multiselect-filter {
   height: 35px;
   border: 1px solid lightgray;
@@ -217,12 +222,12 @@ body {
   box-shadow: none;
 }
 
-.p-multiselect-select-all > .p-checkbox > .p-checkbox-box {
+.p-multiselect-select-all>.p-checkbox>.p-checkbox-box {
   border: 1px solid lightgray;
   /* background-color: var(--secondary-color); */
 }
 
-.p-multiselect-item > .p-multiselect-checkbox > .p-checkbox > .p-checkbox-box {
+.p-multiselect-item>.p-multiselect-checkbox>.p-checkbox>.p-checkbox-box {
   border: 1px solid lightgray;
   /* background-color: var(--secondary-color); */
 }
@@ -239,8 +244,12 @@ body {
 }
 
 .p-dropdown-label {
-  font-size: 0.875rem /* 14px */;
-  line-height: 1.25rem /* 20px */;
+  font-size: 0.875rem
+    /* 14px */
+  ;
+  line-height: 1.25rem
+    /* 20px */
+  ;
 }
 
 /* Input Number */
@@ -261,6 +270,7 @@ body {
   box-shadow: none;
   outline: none;
 }
+
 /* ------------------------ */
 
 /* Text Icon Clickable */
@@ -275,10 +285,13 @@ body {
   position: relative;
 }
 
-.text-icon-clickable-container > span {
-  font-size: 0.2rem; /* equivalent to text-xs */
-  font-weight: 400; /* equivalent to font-normal */
-  line-height: 1.5rem; /* equivalent to leading-6 */
+.text-icon-clickable-container>span {
+  font-size: 0.2rem;
+  /* equivalent to text-xs */
+  font-weight: 400;
+  /* equivalent to font-normal */
+  line-height: 1.5rem;
+  /* equivalent to leading-6 */
 }
 
 /* Data Table */
@@ -349,9 +362,10 @@ body {
 }
 
 /* Password */
-.p-password > .p-icon-field {
+.p-password>.p-icon-field {
   width: 100%;
 }
+
 .p-password-input {
   padding-left: 10px;
   width: 100%;
@@ -367,13 +381,15 @@ body {
 }
 
 .p-datatable-header .p-component::placeholder {
-  font-size: 14px; /* Adjust the font size as needed */
+  font-size: 14px;
+  /* Adjust the font size as needed */
   color: #adacac;
   /* font-weight: 500; */
 }
 
 .p-datatable-header .p-component {
-  font-size: 14px; /* Adjust the font size as needed */
+  font-size: 14px;
+  /* Adjust the font size as needed */
   font-weight: lighter;
 }
 
@@ -433,7 +449,7 @@ body {
   /* margin-top: -2px; */
 }
 
-.p-dropdown-label > .p-inputtext {
+.p-dropdown-label>.p-inputtext {
   margin-top: 10px;
 }
 
@@ -461,6 +477,7 @@ body {
   padding: 0;
   border: 0;
 }
+
 .p-autocomplete-input {
   width: 100%;
   padding-left: 10px;
@@ -497,7 +514,7 @@ body {
   border: 1px dashed gray;
 }
 
-.p-fieldset-legend > a {
+.p-fieldset-legend>a {
   padding: 10px;
 }
 
@@ -552,13 +569,15 @@ body {
 }
 
 .p-dataview-header .p-component::placeholder {
-  font-size: 14px; /* Adjust the font size as needed */
+  font-size: 14px;
+  /* Adjust the font size as needed */
   color: #adacac;
   /* font-weight: 500; */
 }
 
 .p-dataview-header .p-component {
-  font-size: 14px; /* Adjust the font size as needed */
+  font-size: 14px;
+  /* Adjust the font size as needed */
   font-weight: lighter;
 }
 
@@ -573,10 +592,10 @@ body {
 }
 
 .hover-clickable-row:hover {
-  background-color: rgba(0, 0, 0, 0.05); /* Light hover effect */
+  background-color: rgba(0, 0, 0, 0.05);
+  /* Light hover effect */
 }
 
-.react-international-phone-input-container
-  .react-international-phone-country-selector-button {
+.react-international-phone-input-container .react-international-phone-country-selector-button {
   height: 40px;
 }
