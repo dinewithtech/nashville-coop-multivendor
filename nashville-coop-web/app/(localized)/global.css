@@ -14,8 +14,8 @@ layer(primereact);
 }
 
 :root {
-  --primary-color: #B83330;
-  --secondary-color: #E0A896;
+  --primary-color: #f50000;
+  --secondary-color: #FFE5E5;
   --secondary-main-color: #1F4021;
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 255, 255, 255;
