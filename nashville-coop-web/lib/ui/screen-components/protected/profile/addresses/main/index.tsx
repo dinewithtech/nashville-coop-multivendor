@@ -13,7 +13,7 @@ import CustomIconButton from "@/lib/ui/useable-components/custom-icon-button";
 import AddressesSkeleton from "@/lib/ui/useable-components/custom-skeletons/addresses.skelton";
 import CustomDialog from "@/lib/ui/useable-components/delete-dialog";
 import EmptyAddress from "@/lib/ui/useable-components/empty-address";
-import AddressItem from "../main/address-listings";
+import AddressItem from "./address-listings";
 
 //Interfaces
 import { ISingleAddress } from "@/lib/utils/interfaces/profile.interface";
