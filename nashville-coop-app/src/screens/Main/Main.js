@@ -297,8 +297,6 @@ function Main(props) {
     </View>
   )
 
-  if (error) return <ErrorView />
-
   const groceryorders = data?.nearByRestaurantsPreview?.restaurants?.filter((restaurant) => restaurant.shopType === 'grocery')
 
   const restaurantorders = data?.nearByRestaurantsPreview?.restaurants?.filter((restaurant) => restaurant.shopType === 'restaurant')
@@ -342,6 +340,9 @@ function Main(props) {
 
   const restaurantCuisines = useCuisinesData('restaurant', allCuisines)
   const groceryCuisines = useCuisinesData('grocery', allCuisines)
+
+  // Check for error after all hooks have been called
+  if (error) return <ErrorView />
 
   return (
     <>
@@ -471,7 +472,7 @@ function Main(props) {
                     </View>
                   )}
                 </View>
-                <ForceUpdate />
+                {/* <ForceUpdate /> */}
               </View>
             </View>
             <ActiveOrders onActiveOrdersChange={handleActiveOrdersChange} />

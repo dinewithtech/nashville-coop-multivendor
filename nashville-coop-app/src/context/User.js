@@ -45,10 +45,22 @@ export const UserProvider = (props) => {
     networkStatus
   } = useQuery(PROFILE, {
     fetchPolicy: 'network-only',
-    onError,
-    onCompleted,
-    skip: !token
+    skip: !token || token === 'null' || token === 'undefined'
   })
+
+  // Replace deprecated onCompleted with useEffect
+  useEffect(() => {
+    if (dataProfile?.profile && !loadingProfile) {
+      onCompleted(dataProfile)
+    }
+  }, [dataProfile, loadingProfile])
+
+  // Replace deprecated onError with useEffect
+  useEffect(() => {
+    if (errorProfile) {
+      onError(errorProfile)
+    }
+  }, [errorProfile])
   useEffect(() => {
     let isSubscribed = true
     ;(async () => {
@@ -67,6 +79,9 @@ export const UserProvider = (props) => {
 
   function onError(error) {
     console.log('error context user', error.message)
+    if (error.networkError && error.networkError.statusCode === 400) {
+      logout()
+    }
   }
   async function onCompleted(data) {
     const { _id: userId, name, email, phone } = data?.profile
