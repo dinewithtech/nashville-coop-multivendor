@@ -1,11 +1,11 @@
 {
   "expo": {
     "name": "Nashville Coop",
-    "scheme": "wayloz-customer",
+    "scheme": "nashville-coop",
     "version": "1.0.1",
     "description": "Nashville Coop is a starter kit food ordering app built in React Native using Expo for IOS and Android. It's made keeping good aesthetics in mind as well keeping the best coding practices in mind. Its fully customisable to easily help you in your next food delivery project. https://market.nativebase.io/view/react-native-food-delivery-backend-app",
-    "slug": "wayloz-customer",
-    "owner": "wayloz",
+    "slug": "nashville-coop",
+    "owner": "dinewithtech",
     "experiments": {
       "buildCacheProvider": "eas"
     },
@@ -38,7 +38,7 @@
       },
       "supportsTablet": true,
       "userInterfaceStyle": "automatic",
-      "bundleIdentifier": "com.waylozcustomer.app",
+      "bundleIdentifier": "com.nashvillecoop.app",
       "icon": "./assets/icon.png",
       "config": {
         "googleMapsApiKey": "AIzaSyCcm7_Wd7uvmC9YnYLu2JHGWPt6z1MaL1E"
@@ -70,7 +70,7 @@
     },
     "android": {
       "versionCode": 1,
-      "package": "com.waylozcustomer.app",
+      "package": "com.nashvillecoop.app",
       "userInterfaceStyle": "automatic",
       "googleServicesFile": "./google-services.json",
       "splash": {
@@ -124,7 +124,7 @@
       [
         "expo-updates",
         {
-          "username": "ninjas_code"
+          "username": "dinewithtech"
         }
       ],
       [
@@ -147,14 +147,14 @@
     ],
     "extra": {
       "eas": {
-        "projectId": "dfb4d3ab-8b1f-49db-9354-1e31a76a8fd5"
+        "projectId": "9a8850c5-97a2-4d90-b485-fcc6570fa739"
       }
     },
     "runtimeVersion": {
       "policy": "sdkVersion"
     },
     "updates": {
-      "url": "https://u.expo.dev/dfb4d3ab-8b1f-49db-9354-1e31a76a8fd5"
+      "url": "https://u.expo.dev/9a8850c5-97a2-4d90-b485-fcc6570fa739"
     }
   }
 }
