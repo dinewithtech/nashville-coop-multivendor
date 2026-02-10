@@ -1,9 +1,9 @@
 {
   "expo": {
-    "name": "Wayloz",
+    "name": "Nashville Coop",
     "scheme": "wayloz-customer",
     "version": "1.0.1",
-    "description": "Wayloz is a starter kit food ordering app built in React Native using Expo for IOS and Android. It's made keeping good aesthetics in mind as well keeping the best coding practices in mind. Its fully customisable to easily help you in your next food delivery project. https://market.nativebase.io/view/react-native-food-delivery-backend-app",
+    "description": "Nashville Coop is a starter kit food ordering app built in React Native using Expo for IOS and Android. It's made keeping good aesthetics in mind as well keeping the best coding practices in mind. Its fully customisable to easily help you in your next food delivery project. https://market.nativebase.io/view/react-native-food-delivery-backend-app",
     "slug": "wayloz-customer",
     "owner": "wayloz",
     "experiments": {
@@ -63,10 +63,10 @@
     },
     "notification": {
       "iosDisplayInForeground": true,
-      "color": "#B83330",
+      "color": "#f50000",
       "icon": "./assets/not-icon.png",
       "androidMode": "default",
-      "androidCollapsedTitle": "Wayloz Multivendor"
+      "androidCollapsedTitle": "Nashville Coop Multivendor"
     },
     "android": {
       "versionCode": 1,
@@ -130,7 +130,7 @@
       [
         "expo-location",
         {
-          "locationAlwaysAndWhenInUsePermission": "Allow $Wayloz Multivendor to use your location."
+          "locationAlwaysAndWhenInUsePermission": "Allow $Nashville Coop Multivendor to use your location."
         }
       ],
       "expo-font",

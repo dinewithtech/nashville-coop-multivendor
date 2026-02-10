@@ -18,7 +18,7 @@ export const ro = {
     getStarted: 'Începeți!',
     welcome:
       'Bine ați venit la Yalla, uneori tot ce ai nevoie este dragoste. Dar puțină mâncare din când în când nu strică.',
-    welcomeScreen: 'Bine ați venit la Wayloz',
+    welcomeScreen: 'Bine ați venit la Nashville Coop',
     loginBtn: 'Conectare',
     registerBtn: 'Înregistrare',
     name: 'Nume',
@@ -574,8 +574,8 @@ export const ro = {
     none: 'niciunul',
     yourEmail: 'Conectați-vă ușor introducând email-ul!',
     yourEmailPassword: 'Vă rugăm să introduceți parola acum pentru acces!',
-    brandName: 'Wayloz',
-    welcomeText: 'Bine ați venit la Wayloz',
+    brandName: 'Nashville Coop',
+    welcomeText: 'Bine ați venit la Nashville Coop',
     createAccountDesc:
       'Bucurați-vă de cele mai bune restaurante sau obțineți ce aveți nevoie de la magazinele din apropiere, livrate',
     phoneNumber: 'Număr de telefon',
@@ -634,7 +634,7 @@ export const ro = {
     Done: 'Gata',
     addMessage: 'Adăugați mesaj',
     kindlyBeAdvisedText: 'Vă rugăm să fiți informat că mesajul dumneavoastră ar putea fi vizibil și pentru partenerul de livrare responsabil cu livrarea comenzii la destinație.',
-    exploreYallaCities: 'Explorați orașele Wayloz',
+    exploreYallaCities: 'Explorați orașele Nashville Coop',
     Card: 'Card',
     lebelAlreadyExist: "Eticheta '{{selectedLabel}}' există deja. Vă rugăm să alegeți alta.",
     UpdateAvailable: 'Actualizare disponibilă',

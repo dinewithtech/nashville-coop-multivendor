@@ -18,7 +18,7 @@ export const uz = {
     getStarted: 'Boshlash!',
     welcome:
       "Yalla-ga xush kelibsiz, ba’zida sizga faqat sevgi kerak. Ammo vaqti-vaqti bilan ozgina ovqat ham yomon emas.",
-    welcomeScreen: 'Wayloz-ga Xush Kelibsiz',
+    welcomeScreen: 'Nashville Coop-ga Xush Kelibsiz',
     loginBtn: 'Kirish',
     registerBtn: 'Ro‘yxatdan o‘tish',
     name: 'Ism',
@@ -574,8 +574,8 @@ export const uz = {
     none: 'yo‘q',
     yourEmail: 'Elektron pochta orqali oson kiring!',
     yourEmailPassword: 'Kirish uchun parolingizni hozir kiriting!',
-    brandName: 'Wayloz',
-    welcomeText: 'Wayloz-ga Xush Kelibsiz',
+    brandName: 'Nashville Coop',
+    welcomeText: 'Nashville Coop-ga Xush Kelibsiz',
     createAccountDesc:
       'Eng yaxshi restoranlardan bahramand bo‘ling yoki yaqin atrofdagi do‘konlardan kerakli narsalarni yetkazib oling',
     phoneNumber: 'Telefon Raqami',
@@ -634,7 +634,7 @@ export const uz = {
     Done: 'Tayyor',
     addMessage: 'Xabar Qo‘shish',
     kindlyBeAdvisedText: 'Iltimos, xabaringiz buyurtmangizni yetkazib beruvchi hamkorimizga ham ko‘rinishi mumkinligini esda tuting.',
-    exploreYallaCities: 'Wayloz Shaharlarini O‘rganing',
+    exploreYallaCities: 'Nashville Coop Shaharlarini O‘rganing',
     Card: 'Karta',
     lebelAlreadyExist: "'{{selectedLabel}}' yorlig‘i allaqachon mavjud. Iltimos, boshqasini tanlang.",
     UpdateAvailable: 'Yangilanish Mavjud',
