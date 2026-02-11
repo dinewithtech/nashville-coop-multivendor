@@ -1,4 +1,4 @@
-# Contributing to Wayloz Multi Vendor Food Delivery System
+# Contributing to Nashville Coop Multi Vendor Food Delivery System
 
 First off, thank you for considering contributing to our project! Your help is greatly appreciated.
 
