@@ -13,9 +13,9 @@ const ConfigurationContext = React.createContext({})
 export const ConfigurationProvider = props => {
   const { loading, data, error } = useQuery(GETCONFIGURATION)
 
-  const WEB_CLIENT_ID = '967541328677-d46sl62t52g5r3o5m0mnl2hpptr242nl.apps.googleusercontent.com';
-  const ANDROID_CLIENT_ID = '967541328677-7264tf7tkdtoufk844rck9mimrve135c.apps.googleusercontent.com';
-  const IOS_CLIENT_ID = '967541328677-30n1b9dljqadrr4badeku41980rf2dt1.apps.googleusercontent.com';
+  const WEB_CLIENT_ID = '709101306942-a0ln13c4mnmc9pcb90qajm0joh177qr9.apps.googleusercontent.com';
+  const ANDROID_CLIENT_ID = '709101306942-9fhrtlql0nr2tnlclskhs8qdomq9p45q.apps.googleusercontent.com';
+  const IOS_CLIENT_ID = '709101306942-f02dcd6f5bnk1hsrrif7a9u4q71qrqur.apps.googleusercontent.com';
 
   const configuration =
     loading || error || !data?.configuration
