@@ -41,7 +41,7 @@
       "bundleIdentifier": "com.nashvillecoop.app",
       "icon": "./assets/icon.png",
       "config": {
-        "googleMapsApiKey": "AIzaSyCcm7_Wd7uvmC9YnYLu2JHGWPt6z1MaL1E"
+        "googleMapsApiKey": "AIzaSyArp-fAwMjoBOkPU8YcqIR3Hw-b05iRwlA"
       },
       "usesAppleSignIn": true,
       "infoPlist": {
@@ -54,7 +54,7 @@
         "CFBundleURLTypes": [
           {
             "CFBundleURLSchemes": [
-              "com.googleusercontent.apps.390081406826-qvpf8dhi51i1srogmp3unh58623v237q"
+              "com.googleusercontent.apps.709101306942-f02dcd6f5bnk1hsrrif7a9u4q71qrqur"
             ]
           }
         ],
@@ -80,7 +80,7 @@
       },
       "config": {
         "googleMaps": {
-          "apiKey": "AIzaSyCcm7_Wd7uvmC9YnYLu2JHGWPt6z1MaL1E"
+          "apiKey": "AIzaSyArp-fAwMjoBOkPU8YcqIR3Hw-b05iRwlA"
         }
       },
       "permissions": [
